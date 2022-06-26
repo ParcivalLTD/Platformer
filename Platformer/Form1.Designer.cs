@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Platformer));
             this.pbGround = new System.Windows.Forms.PictureBox();
             this.pbPlayer = new System.Windows.Forms.PictureBox();
             this.tmrGravity = new System.Windows.Forms.Timer(this.components);
@@ -86,6 +87,7 @@
             this.ClientSize = new System.Drawing.Size(772, 724);
             this.Controls.Add(this.pbPlayer);
             this.Controls.Add(this.pbGround);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Platformer";
             this.Text = "Platformer";
             this.Load += new System.EventHandler(this.Form1_Load);
